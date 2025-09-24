@@ -1,0 +1,21 @@
+{
+    "waitFor" : "onCreateCommand",
+    "updateContentCommand": "sudo apt update && sudo apt install -y doxygen",
+    "postCreateCommand": "", 
+    "customizations": {
+        "codespaces": {
+          "openFiles": []
+        },
+        "vscode": {
+          "extensions": [
+            "ms-vcode.cmake-tools",
+            "ms-vscode.cpptools",
+            "ms-vscode.cpptools-extension-pack",
+            "ms-vscode.cpptools-themes",
+            "ms-vscode.makefile-tools",
+            "twxs.cmake",
+            "cschlosser.doxdocgen"
+          ]
+        }
+      }
+  }
