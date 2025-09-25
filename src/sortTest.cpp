@@ -66,7 +66,7 @@ void timeTest(unsigned int arsize, unsigned int runcount)
 
     // Run each sort runcount times and average the results
     for(const auto& sort : sorts) {
-        auto timer = makeTimingFixture<std::chrono::microseconds>(sort.function, v);
+        auto timer = makeTimingFixture<std::chrono::nanoseconds>(sort.function, v);
         timer.run(); // warmup run
         std::cout << sort.name << "\t" << timer.average(runcount) << std::endl;
     }
