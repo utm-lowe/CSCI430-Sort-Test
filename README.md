@@ -4,7 +4,7 @@ running time over a user specified number of runs. (The default number of runs
 is 10.)
 
 To use this program, place your sorting algorithms in the sorts directory. The
-sorting algorithms must be divided up into a header and cpp file. The headerfile
+sorting algorithms must be divided up into a header and cpp file. The header file
 must have the same name as the sorting function and it should accept a vector of
 integers by reference as its only argument.
 
