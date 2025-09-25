@@ -26,7 +26,7 @@ int main(int argc, char **argv)
     // get the arsize and runcount
     arsize = static_cast<unsigned int>(std::strtoul(argv[1], nullptr, 10));
     if(argc == 3) {
-        runcount = static_cast<unsigned int>(std::strtoul(argv[1], nullptr, 10));
+        runcount = static_cast<unsigned int>(std::strtoul(argv[2], nullptr, 10));
     }
 
     // handle invalid arguments 
