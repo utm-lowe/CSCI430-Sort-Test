@@ -36,11 +36,16 @@ int main(int argc, char **argv)
     }
 
     // First, run the validity test
+    std::cout << "Running validity test with array size " 
+              << arsize << std::endl;
     if(not validityTest(arsize)) {
         std::cerr << "Validity test failed. Aborting." << std::endl;
         return -3;
     }
+    std::cout << std::endl;
 
     // Now run the timing tests
+    std::cout << "Average running timing test with array size " 
+              << arsize << " and run count " << runcount << std::endl;
     timeTest(arsize, runcount);
 }
