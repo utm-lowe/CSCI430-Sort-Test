@@ -42,7 +42,7 @@ public:
 
         // Perform the run 
         auto start = std::chrono::high_resolution_clock::now();
-        func(arg);
+        func(argcopy);
         auto end = std::chrono::high_resolution_clock::now();
 
         // get the duration
